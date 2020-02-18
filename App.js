@@ -9,7 +9,7 @@ export default function App() {
       <View
         //To set the background color in IOS Status Bar also
         style={{
-          backgroundColor: '#50FA7B',
+          backgroundColor: '#2D3A4A',
           height: Platform.OS === 'ios' ? 20 : StatusBar.currentHeight,
         }}>
         <StatusBar

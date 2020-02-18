@@ -9,130 +9,27 @@ const GameView = () => {
       <Card>
         <CardSection>
           <View style={styles.dateCard}>
-            <Text style={{color: 'white'}}> Jan </Text>
-            <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 20}}>
+            <Text style={{color: '#79AF1B'}}> Jan </Text>
+            <Text style={{color: '#79AF1B', fontWeight: 'bold', fontSize: 20}}>
               22
             </Text>
-            <Text style={{color: '#fff'}}> 2020 </Text>
+            <Text style={{color: '#79AF1B'}}> 2020 </Text>
           </View>
           <View style={styles.gameCard}>
-            <Text style={{color: 'white', fontSize: 20}}> Real Madrid </Text>
-            <Text style={{color: 'white', fontSize: 20}}> vs </Text>
-            <Text style={{color: 'white', fontSize: 20}}> Barcelona </Text>
+            <View>
+              <Text style={{color: '#79AF1B'}}> German Bundesliga </Text>
+            </View>
+            <View style={{flexDirection: 'row', marginTop: '5%'}}>
+              <Text style={{color: 'grey', fontSize: 20}}> Real Madrid </Text>
+              <Text style={{color: 'grey', fontSize: 20}}> vs </Text>
+              <Text style={{color: 'grey', fontSize: 20}}> Barcelona </Text>
+            </View>
           </View>
         </CardSection>
         <View style={styles.prediction}>
-          <Text style={{color: 'white', fontSize: 20}}> Prediction: </Text>
-          <Text style={{color: 'white', fontSize: 20}}>
+          <Text style={{color: '#79AF1B', fontSize: 20}}> Prediction: </Text>
+          <Text style={{color: 'grey', fontSize: 20}}>
             Barcelona and over 2.5
-          </Text>
-        </View>
-      </Card>
-      <Card>
-        <CardSection>
-          <View style={styles.dateCard}>
-            <Text style={{color: 'white'}}> Jan </Text>
-            <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 20}}>
-              22
-            </Text>
-            <Text style={{color: '#fff'}}> 2020 </Text>
-          </View>
-          <View style={styles.gameCard}>
-            <Text style={{color: 'white', fontSize: 20}}> Chelsea </Text>
-            <Text style={{color: 'white', fontSize: 20}}> vs </Text>
-            <Text style={{color: 'white', fontSize: 20}}> Manchester City </Text>
-          </View>
-        </CardSection>
-        <View style={styles.prediction}>
-          <Text style={{color: 'white', fontSize: 20}}> Prediction: </Text>
-          <Text style={{color: 'white', fontSize: 20}}>2 and over 1.5</Text>
-        </View>
-      </Card>
-      <Card>
-        <CardSection>
-          <View style={styles.dateCard}>
-            <Text style={{color: 'white'}}>Jan</Text>
-            <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 20}}>
-              22
-            </Text>
-            <Text style={{color: '#fff'}}>2020</Text>
-          </View>
-          <View style={styles.gameCard}>
-            <Text style={{color: 'white', fontSize: 20}}> Arsenal </Text>
-            <Text style={{color: 'white', fontSize: 20}}> vs </Text>
-            <Text style={{color: 'white', fontSize: 20}}> Newcastle </Text>
-          </View>
-        </CardSection>
-        <View style={styles.prediction}>
-          <Text style={{color: 'white', fontSize: 20}}> Prediction: </Text>
-          <Text style={{color: 'white', fontSize: 20}}>
-            1 & over 2.5
-          </Text>
-        </View>
-      </Card>
-      <Card>
-        <CardSection>
-          <View style={styles.dateCard}>
-            <Text style={{color: 'white'}}>Jan</Text>
-            <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 20}}>
-              22
-            </Text>
-            <Text style={{color: '#fff'}}>2020</Text>
-          </View>
-          <View style={styles.gameCard}>
-            <Text style={{color: 'white', fontSize: 20}}> Bayern Munich </Text>
-            <Text style={{color: 'white', fontSize: 20}}> vs </Text>
-            <Text style={{color: 'white', fontSize: 20}}> Liepzeig </Text>
-          </View>
-        </CardSection>
-        <View style={styles.prediction}>
-          <Text style={{color: 'white', fontSize: 20}}> Prediction: </Text>
-          <Text style={{color: 'white', fontSize: 20}}>
-            X & over 1.5
-          </Text>
-        </View>
-      </Card>
-      <Card>
-        <CardSection>
-          <View style={styles.dateCard}>
-            <Text style={{color: 'white'}}>Jan</Text>
-            <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 20}}>
-              22
-            </Text>
-            <Text style={{color: '#fff'}}>2020</Text>
-          </View>
-          <View style={styles.gameCard}>
-            <Text style={{color: 'white', fontSize: 20}}> Lazio </Text>
-            <Text style={{color: 'white', fontSize: 20}}> vs </Text>
-            <Text style={{color: 'white', fontSize: 20}}> Inter Milan </Text>
-          </View>
-        </CardSection>
-        <View style={styles.prediction}>
-          <Text style={{color: 'white', fontSize: 20}}> Prediction: </Text>
-          <Text style={{color: 'white', fontSize: 20}}>
-            Both teams to score - Yes
-          </Text>
-        </View>
-      </Card>
-      <Card>
-        <CardSection>
-          <View style={styles.dateCard}>
-            <Text style={{color: 'white'}}>Jan</Text>
-            <Text style={{color: '#fff', fontWeight: 'bold', fontSize: 20}}>
-              22
-            </Text>
-            <Text style={{color: '#fff'}}>2020</Text>
-          </View>
-          <View style={styles.gameCard}>
-            <Text style={{color: 'white', fontSize: 20}}> Lazio </Text>
-            <Text style={{color: 'white', fontSize: 20}}> vs </Text>
-            <Text style={{color: 'white', fontSize: 20}}> Inter Milan </Text>
-          </View>
-        </CardSection>
-        <View style={styles.prediction}>
-          <Text style={{color: 'white', fontSize: 20}}> Prediction: </Text>
-          <Text style={{color: 'white', fontSize: 20}}>
-            Both teams to score - Yes
           </Text>
         </View>
       </Card>
@@ -172,11 +69,9 @@ const styles = StyleSheet.create({
     elevation: 1,
     marginLeft: 5,
     marginRight: 5,
-    flexDirection: 'row',
     width: '85%',
     alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: 10,
+    padding: 5,
   },
   prediction: {
     padding: 10,
