@@ -1,0 +1,5 @@
+expo sdk
+react-native
+@react-native-community/eslint-config": "^0.0.6
+eslint": "^6.8.0
+
