@@ -7,15 +7,6 @@ const Header = props => {
       <View>
         <Text style={styles.textStyle}>{props.headerText}</Text>
       </View>
-      <View style={styles.IconView}>
-        <Ionicons
-          style={styles.singleIcon}
-          name="md-settings"
-          size={30}
-          color="white"
-        />
-        <Ionicons name="md-menu" size={32} color="white" />
-      </View>
     </View>
   );
 };
@@ -23,7 +14,7 @@ const Header = props => {
 const styles = StyleSheet.create({
   viewStyle: {
     backgroundColor: '#2D3A4A',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     alignItems: 'flex-start',
     height: 50,
     paddingTop: 10,
