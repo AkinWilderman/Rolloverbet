@@ -56,7 +56,7 @@ const GameView = props => {
                   : styles.predictionText,
               ]}>
               {' '}
-              - {props.game.home}{' '}
+              -{props.game.home} -
             </Text>
             <Text
               style={[
@@ -66,7 +66,7 @@ const GameView = props => {
                   ? styles.lostColor
                   : styles.predictionText,
               ]}>
-              - {props.game.away}{' '}
+              -{props.game.away} {' '}
             </Text>
             <Text
               style={[
@@ -76,7 +76,7 @@ const GameView = props => {
                   ? styles.lostColor
                   : styles.predictionText,
               ]}>
-              {props.game.prediction}{' '}
+              -{props.game.prediction} {' '}
             </Text>
           </View>
           <View style={styles.dateCard}>

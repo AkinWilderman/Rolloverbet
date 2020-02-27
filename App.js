@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {StyleSheet, View, StatusBar, Platform, ScrollView} from 'react-native';
 import Header from './src/components/Header';
 import GameLists from './src/components/GameLists';
+import Index from './src/components/Index';
 
 export default class App extends Component {
   render() {
@@ -25,9 +26,8 @@ export default class App extends Component {
             networkActivityIndicatorVisible={true}
           />
         </View>
-        <Header headerText={'Free Tips'} />
         <ScrollView>
-          <GameLists />
+          <Index />
         </ScrollView>
       </View>
     );

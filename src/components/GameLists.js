@@ -8,7 +8,7 @@ class GameLists extends Component {
 
   UNSAFE_componentWillMount() {
     axios
-      .get('https://b0ac0399.ngrok.io')
+      .get('http://f788a8d3.ngrok.io')
       .then(response => this.setState({freetips: response.data}));
   }
 
