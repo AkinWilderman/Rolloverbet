@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, StatusBar, Platform, ScrollView} from 'react-native';
 import Header from './src/components/Header';
-import GameLists from './src/components/GameLists';
+import FreeTipLists from './src/components/FreeTipLists';
+import StackNavigator from './src/components/Navigator';
 import Index from './src/components/Index';
+import FreeTipDetail from './src/components/FreeTipDetail';
 
 export default class App extends Component {
   render() {
@@ -26,9 +28,7 @@ export default class App extends Component {
             networkActivityIndicatorVisible={true}
           />
         </View>
-        <ScrollView>
-          <Index />
-        </ScrollView>
+        <StackNavigator />
       </View>
     );
   }
@@ -37,6 +37,5 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#2D3A4A',
   },
 });

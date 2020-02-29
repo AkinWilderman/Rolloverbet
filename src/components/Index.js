@@ -7,7 +7,6 @@ import {
   TouchableOpacity,
   Platform,
 } from 'react-native';
-import {Ionicons} from '@expo/vector-icons';
 import Header from './Header';
 
 function Separator() {
@@ -20,8 +19,9 @@ class Index extends Component {
       <View style={styles.below}>
         <Header headerText={'Rolloverbet Predictions'} />
         <TouchableOpacity
-          onPress={() => this.props.navigation.navigate('Settings')}>
+          onPress={() => this.props.navigation.navigate('freeTips')}>
           <View style={styles.belowItems}>
+            <Image source={require('../media/GOtv.png')} style={styles.image} />
             <Text style={styles.text}>FREE TIPS</Text>
           </View>
         </TouchableOpacity>
@@ -80,11 +80,15 @@ const styles = StyleSheet.create({
     padding: '2%',
   },
   text: {
-    color: '#fff',
+    color: '#2D3A4A',
     marginLeft: 30,
     fontSize: 16,
     flex: 1,
     fontWeight: 'bold',
+  },
+  image: {
+    width: 40,
+    height: 40,
   },
 });
 

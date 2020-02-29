@@ -1,10 +1,11 @@
 import React from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {View, StyleSheet, Text, Platform} from 'react-native';
 import {Ionicons} from '@expo/vector-icons';
 const Header = props => {
   return (
     <View style={styles.viewStyle}>
       <View>
+
         <Text style={styles.textStyle}>{props.headerText}</Text>
       </View>
     </View>

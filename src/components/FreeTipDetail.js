@@ -7,7 +7,7 @@ import {ScrollView, View, StyleSheet, Text} from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
 
-const GameView = props => {
+const FreeTipDetail = props => {
   let gameResult = props.game.result;
   return (
     <View>
@@ -66,7 +66,7 @@ const GameView = props => {
                   ? styles.lostColor
                   : styles.predictionText,
               ]}>
-              -{props.game.away} {' '}
+              -{props.game.away}{' '}
             </Text>
             <Text
               style={[
@@ -76,7 +76,7 @@ const GameView = props => {
                   ? styles.lostColor
                   : styles.predictionText,
               ]}>
-              -{props.game.prediction} {' '}
+              -{props.game.prediction}{' '}
             </Text>
           </View>
           <View style={styles.dateCard}>
@@ -181,4 +181,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default GameView;
+export default FreeTipDetail;
