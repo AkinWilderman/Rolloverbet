@@ -17,41 +17,87 @@ class Index extends Component {
   render() {
     return (
       <View style={styles.below}>
-        <Header headerText={'Rolloverbet Predictions'} />
         <TouchableOpacity
           onPress={() => this.props.navigation.navigate('freeTips')}>
           <View style={styles.belowItems}>
-            <Image source={require('../media/GOtv.png')} style={styles.image} />
+            <Image
+              source={require('../media/freetips.png')}
+              style={styles.image}
+            />
             <Text style={styles.text}>FREE TIPS</Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => this.props.navigation.navigate('DeliveryAddress')}>
+          onPress={() => this.props.navigation.navigate('TwoOdds')}>
           <View style={styles.belowItems}>
+            <Image
+              source={require('../media/money-bag.png')}
+              style={styles.image}
+            />
             <Text style={styles.text}>2 ODDS DAILY (premium)</Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => this.props.navigation.navigate('Messages')}>
+          onPress={() => this.props.navigation.navigate('Accumulator')}>
           <View style={styles.belowItems}>
-            <Text style={styles.text}>ACCUMULATION (premium)</Text>
+            <Image
+              source={require('../media/money.png')}
+              style={styles.image}
+            />
+            <Text style={styles.text}>DAILY ACCUMULATOR (premium)</Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => this.props.navigation.navigate('RecentOrders')}>
+          onPress={() => this.props.navigation.navigate('FiftyOdds')}>
           <View style={styles.belowItems}>
-            <Text style={styles.text}>FIFTY ODDS WEEKLY (premium)</Text>
+            <Image
+              source={require('../media/money-bag-colored.png')}
+              style={styles.image}
+            />
+            <Text style={styles.text}>70 ODDS WEEKLY (premium)</Text>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => this.props.navigation.navigate('FiftyOdds')}>
+          <View style={styles.belowItems}>
+            <Image source={require('../media/coin.png')} style={styles.image} />
+            <Text style={styles.text}>LIVE MATCHES (free)</Text>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => this.props.navigation.navigate('FiftyOdds')}>
+          <View style={styles.belowItems}>
+            <Image
+              source={require('../media/accumulator.png')}
+              style={styles.image}
+            />
+            <Text style={styles.text}> HIGH STAKERS (premium)</Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => this.props.navigation.navigate('PaymentMethod')}>
           <View style={styles.belowItems}>
-            <Text style={styles.text}>HELP</Text>
+            <Image
+              source={require('../media/subscribe.png')}
+              style={styles.image}
+            />
+            <Text style={styles.text}>SUBSCRIBE</Text>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => this.props.navigation.navigate('PaymentMethod')}>
+          <View style={styles.belowItems}>
+            <Image
+              source={require('../media/customer-service.png')}
+              style={styles.image}
+            />
+            <Text style={styles.text}>SUPPORT</Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => this.props.navigation.navigate('Help')}>
           <View style={styles.belowItems}>
+            <Image source={require('../media/faq.png')} style={styles.image} />
             <Text style={styles.text}>F.A.Q</Text>
           </View>
         </TouchableOpacity>
@@ -81,14 +127,14 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#2D3A4A',
-    marginLeft: 30,
+    marginLeft: 15,
     fontSize: 16,
     flex: 1,
     fontWeight: 'bold',
   },
   image: {
-    width: 40,
-    height: 40,
+    width: 30,
+    height: 30,
   },
 });
 

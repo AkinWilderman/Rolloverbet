@@ -20,7 +20,7 @@ const FreeTipDetail = props => {
                   ? styles.wonColor
                   : gameResult === 'lost'
                   ? styles.lostColor
-                  : {color: '#D69137', fontWeight: 'bold'},
+                  : {color: '#D69137'},
               ]}>
               {' '}
               {props.game.date}
@@ -41,7 +41,7 @@ const FreeTipDetail = props => {
                   ? styles.wonColor
                   : gameResult === 'lost'
                   ? styles.lostColor
-                  : {color: '#D69137', fontWeight: 'bold'},
+                  : {color: '#D69137'},
               ]}>
               {props.game.id}
             </Text>
@@ -88,7 +88,7 @@ const FreeTipDetail = props => {
                   ? styles.lostColor
                   : {color: '#D69137', fontWeight: 'bold'},
               ]}>
-              {props.game.Country}
+              {props.game.Country} {''}
             </Text>
             <Text
               style={[
@@ -96,7 +96,7 @@ const FreeTipDetail = props => {
                   ? styles.wonColor
                   : gameResult === 'lost'
                   ? styles.lostColor
-                  : {color: '#D69137', fontWeight: 'bold'},
+                  : {color: '#D69137'},
               ]}>
               {props.game.competition}
             </Text>
@@ -106,7 +106,7 @@ const FreeTipDetail = props => {
                   ? styles.wonColor
                   : gameResult === 'lost'
                   ? styles.lostColor
-                  : {color: '#D69137', fontWeight: 'bold'},
+                  : {color: '#D69137'},
               ]}>
               {props.game.certainty}
             </Text>
@@ -116,7 +116,7 @@ const FreeTipDetail = props => {
                   ? styles.wonColor
                   : gameResult === 'lost'
                   ? styles.lostColor
-                  : {color: '#D69137', fontWeight: 'bold'},
+                  : {color: '#D69137'},
               ]}>
               {' '}
               {props.game.odds}{' '}

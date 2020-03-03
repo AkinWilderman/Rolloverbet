@@ -1,21 +1,45 @@
 import React from 'react';
 import {createStackNavigator} from 'react-navigation-stack';
 import {createAppContainer} from 'react-navigation';
-import FreeTipLists from './FreeTipLists';
+import FreeTip from './FreeTip';
 import Index from './Index';
-import Header from './Header';
+import TwoOddsDaily from './TwoOddsDaily';
+import FiftyOddsWeekly from './FiftyOddsWeekly';
+import Accumulator from './Accumulator';
 
 const APPNavigator = createStackNavigator({
-  index: {
+  Home: {
     screen: Index,
     navigationOptions: {
       headerShown: false,
     },
   },
   freeTips: {
-    screen: FreeTipLists,
+    screen: FreeTip,
     navigationOptions: {
-      header: () => <Header headerText={'free tips'} />,
+      headerTitle: 'Free Tips',
+      headerStatusBarHeight: 0,
+    },
+  },
+  TwoOdds: {
+    screen: TwoOddsDaily,
+    navigationOptions: {
+      headerTitle: 'Two Odds Daily',
+      headerStatusBarHeight: 0,
+    },
+  },
+  Accumulator: {
+    screen: Accumulator,
+    navigationOptions: {
+      headerTitle: 'Accumulator',
+      headerStatusBarHeight: 0,
+    },
+  },
+  FiftyOdds: {
+    screen: FiftyOddsWeekly,
+    navigationOptions: {
+      headerTitle: '50 Odds Weekly',
+      headerStatusBarHeight: 0,
     },
   },
 });

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, StatusBar, Platform, ScrollView} from 'react-native';
 import Header from './src/components/Header';
-import FreeTipLists from './src/components/FreeTipLists';
+import FreeTip from './src/components/FreeTip';
 import StackNavigator from './src/components/Navigator';
 import Index from './src/components/Index';
 import FreeTipDetail from './src/components/FreeTipDetail';

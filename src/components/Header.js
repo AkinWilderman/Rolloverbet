@@ -1,11 +1,34 @@
 import React from 'react';
-import {View, StyleSheet, Text, Platform} from 'react-native';
+import {
+  View,
+  StyleSheet,
+  Text,
+  Platform,
+  TouchableOpacity,
+  TouchableNativeFeedback,
+} from 'react-native';
 import {Ionicons} from '@expo/vector-icons';
-const Header = props => {
+
+const getTypedIcon = name => {
+  return Platform.OS === 'ios' ? `ios-${name}` : `md-${name}`;
+};
+
+// component or the header
+const Header = (props, {navigation}) => {
   return (
     <View style={styles.viewStyle}>
-      <View>
-
+      <View style={{flexDirection: 'row', alignItems: 'space-between'}}>
+        <TouchableOpacity
+          onPress={() => {
+            navigation.push('index');
+          }}>
+          <Ionicons
+            style={styles.IconView}
+            name={getTypedIcon('arrow-round-back')}
+            size={20}
+            color={'white'}
+          />
+        </TouchableOpacity>
         <Text style={styles.textStyle}>{props.headerText}</Text>
       </View>
     </View>
@@ -15,7 +38,6 @@ const Header = props => {
 const styles = StyleSheet.create({
   viewStyle: {
     backgroundColor: '#1D252E',
-    justifyContent: 'center',
     alignItems: 'flex-start',
     height: 50,
     paddingTop: 10,
@@ -23,12 +45,9 @@ const styles = StyleSheet.create({
     shadowOffset: {width: 0, height: 2},
     shadowOpacity: 1,
     elevation: 2,
-    position: 'relative',
-    flexDirection: 'row',
   },
   IconView: {
-    flexDirection: 'row',
-    marginEnd: 10,
+    marginStart: 15,
   },
   singleIcon: {
     marginEnd: 10,
@@ -36,8 +55,6 @@ const styles = StyleSheet.create({
   textStyle: {
     fontSize: 20,
     color: 'white',
-    marginStart: '3%',
-    marginEnd: '3%',
   },
 });
 
