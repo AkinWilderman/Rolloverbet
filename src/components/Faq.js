@@ -1,23 +1,27 @@
 import React, {Component} from 'react';
-import {View, ScrollView, Text, StyleSheet, Alert, TouchableOpacity} from 'react-native';
+import {View, ScrollView, StyleSheet} from 'react-native';
+import axios from 'axios';
+import FaqDetail from './FaqDetail';
 
 class Faq extends Component {
-  /*UNSAFE_componentWillMount() {
+  state = {faq: []};
+  UNSAFE_componentWillMount() {
+    axios
+      .get('https://751ad277.ngrok.io')
+      .then(res => this.setState({faq: res.data}));
+  }
 
-  }*/
-
-  clickHandler = (title, message) => {
-    Alert.alert('Alert is working', 'I am testing alert');
-  };
+  // render function for each faq
+  renderFaq() {
+    return this.state.faq.map(faq => (
+      <FaqDetail key={faq.question} faq={faq} />
+    ));
+  }
 
   render() {
     return (
       <ScrollView>
-        <View styles={styles.container}>
-          <TouchableOpacity>
-            <Text> Who are we</Text>
-          </TouchableOpacity>
-        </View>
+        <View styles={styles.container}>{this.renderFaq()}</View>
       </ScrollView>
     );
   }
@@ -26,6 +30,17 @@ class Faq extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  belowItems: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: '2%',
+    padding: '2%',
+  },
+  separator: {
+    marginVertical: 1,
+    borderBottomColor: '#D6D8DC',
+    borderBottomWidth: 0.5,
   },
 });
 

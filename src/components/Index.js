@@ -16,7 +16,7 @@ function Separator() {
 class Index extends Component {
   render() {
     return (
-      <View style={styles.below}>
+      <View>
         <TouchableOpacity
           onPress={() => this.props.navigation.navigate('freeTips')}>
           <View style={styles.belowItems}>
@@ -94,8 +94,7 @@ class Index extends Component {
             <Text style={styles.text}>SUPPORT</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => this.props.navigation.navigate('Help')}>
+        <TouchableOpacity onPress={() => this.props.navigation.navigate('Faq')}>
           <View style={styles.belowItems}>
             <Image source={require('../media/faq.png')} style={styles.image} />
             <Text style={styles.text}>F.A.Q</Text>

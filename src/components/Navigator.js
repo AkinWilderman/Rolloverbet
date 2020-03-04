@@ -6,6 +6,7 @@ import Index from './Index';
 import TwoOddsDaily from './TwoOddsDaily';
 import FiftyOddsWeekly from './FiftyOddsWeekly';
 import Accumulator from './Accumulator';
+import Faq from './Faq';
 
 const APPNavigator = createStackNavigator({
   Home: {
@@ -39,6 +40,13 @@ const APPNavigator = createStackNavigator({
     screen: FiftyOddsWeekly,
     navigationOptions: {
       headerTitle: '50 Odds Weekly',
+      headerStatusBarHeight: 0,
+    },
+  },
+  Faq: {
+    screen: Faq,
+    navigationOptions: {
+      headerTitle: 'FAQs',
       headerStatusBarHeight: 0,
     },
   },
