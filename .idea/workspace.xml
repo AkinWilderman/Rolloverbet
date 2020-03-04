@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ab5d844-a44d-4bfa-ba7a-422f3075c078" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Accumulator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FiftyOddsWeekly.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TwoOddsDaily.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/accumulator.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/coin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/customer-service.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/faq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/freetips.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/high-stakers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/highstake.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/money-bag-colored.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/money-bag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/money.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/media/subscribe.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Akinkunle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Akinkunle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Faq.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FreeTipDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FreeTipDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FreeTipLists.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FreeTip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/media/GOtv.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,8 +32,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/media" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\node_modules\prettier" />
@@ -100,7 +81,8 @@
       <workItem from="1583143422402" duration="1496000" />
       <workItem from="1583176987461" duration="2902000" />
       <workItem from="1583236787479" duration="11822000" />
-      <workItem from="1583260882305" duration="1179000" />
+      <workItem from="1583260882305" duration="7059000" />
+      <workItem from="1583282376315" duration="802000" />
     </task>
     <task id="LOCAL-00001" summary="gamelist fixed">
       <created>1582943184338</created>
@@ -109,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582943184338</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Index page done">
+      <created>1583262140385</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1583262140385</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +119,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gamelist fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="gamelist fixed" />
+    <MESSAGE value="Index page done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Index page done" />
   </component>
 </project>
