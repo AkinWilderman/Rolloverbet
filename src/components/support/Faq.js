@@ -7,7 +7,7 @@ class Faq extends Component {
   state = {faq: []};
   UNSAFE_componentWillMount() {
     axios
-      .get('https://751ad277.ngrok.io')
+      .get('https://9d81fd9d.ngrok.io')
       .then(res => this.setState({faq: res.data}));
   }
 

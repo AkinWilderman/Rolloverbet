@@ -7,14 +7,23 @@ import {
   TouchableOpacity,
   Platform,
 } from 'react-native';
-import Header from './Header';
+import {AdMobInterstitial, PublisherBanner} from 'expo-ads-admob';
 
 function Separator() {
   return <View style={styles.separator} />;
 }
 
+// ca-app-pub-3763838117475589/9514510636 -  Real Ad ID
+// ca-app-pub-3940256099942544/1033173712 - Test ID
 class Index extends Component {
   render() {
+    AdMobInterstitial.setAdUnitID(
+      'ca-app-pub-3940256099942544/1033173712',
+    ).then(r =>
+      AdMobInterstitial.requestAdAsync().then(() =>
+        AdMobInterstitial.showAdAsync(),
+      ),
+    );
     return (
       <View>
         <TouchableOpacity
@@ -100,6 +109,16 @@ class Index extends Component {
             <Text style={styles.text}>F.A.Q</Text>
           </View>
         </TouchableOpacity>
+        <View style={styles.IndexAD}>
+          <PublisherBanner
+            bannerSize="largeBanner"
+            // ca-app-pub-3763838117475589/7682246729 - Real ads ID
+            // ca-app-pub-3940256099942544/6300978111 - Test ID
+            adUnitID="ca-app-pub-3940256099942544/6300978111"
+            servePersonalizedAds={true}
+            onDidFailToReceiveAdWithError={this.bannerError}
+          />
+        </View>
       </View>
     );
   }
@@ -123,6 +142,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginTop: '2%',
     padding: '2%',
+  },
+  IndexAD: {
+    alignItems: 'center',
+    margin: '20%',
+  },
+  IndexAdMid: {
+    alignItems: 'center',
+    marginTop: '1%',
   },
   text: {
     color: '#2D3A4A',

@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
-import {StyleSheet, View, StatusBar, Platform, ScrollView} from 'react-native';
-import Header from './src/components/Header';
-import FreeTip from './src/components/FreeTip';
+import {StyleSheet, View, StatusBar, Platform} from 'react-native';
 import StackNavigator from './src/components/Navigator';
-import Index from './src/components/Index';
-import FreeTipDetail from './src/components/FreeTipDetail';
+import {
+  AdMobBanner,
+  AdMobInterstitial,
+  PublisherBanner,
+  AdMobRewarded,
+} from 'expo-ads-admob';
 
 export default class App extends Component {
   render() {

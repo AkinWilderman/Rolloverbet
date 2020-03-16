@@ -1,12 +1,13 @@
 import React from 'react';
 import {createStackNavigator} from 'react-navigation-stack';
 import {createAppContainer} from 'react-navigation';
-import FreeTip from './FreeTip';
+import FreeTip from './free/FreeTip';
 import Index from './Index';
-import TwoOddsDaily from './TwoOddsDaily';
-import FiftyOddsWeekly from './FiftyOddsWeekly';
-import Accumulator from './Accumulator';
-import Faq from './Faq';
+import TwoOddsDaily from './premium/TwoOddsDaily';
+import FiftyOddsWeekly from './premium/FiftyOddsWeekly';
+import Accumulator from './premium/Accumulator';
+import Faq from './support/Faq';
+import Payment from './payment/Payment';
 
 const APPNavigator = createStackNavigator({
   Home: {

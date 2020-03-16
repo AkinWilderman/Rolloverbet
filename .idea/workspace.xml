@@ -2,11 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ab5d844-a44d-4bfa-ba7a-422f3075c078" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/FaqDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/free/FreeTip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/free/LiveMatches.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/payment/Payment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/payment/Subscribe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/support/Support.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Faq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Accumulator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/premium/Accumulator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/support/Faq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FaqDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/support/FaqDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FiftyOddsWeekly.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/premium/FiftyOddsWeekly.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FreeTip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FreeTipDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TipDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TwoOddsDaily.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/premium/TwoOddsDaily.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/media" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Planty" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -42,6 +57,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
@@ -50,7 +66,11 @@
       <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\media" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\components\support" />
+      <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\components\payment" />
       <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\components" />
+      <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\components\free" />
+      <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\components\premium" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -86,7 +106,35 @@
       <workItem from="1583236787479" duration="11822000" />
       <workItem from="1583260882305" duration="7059000" />
       <workItem from="1583282376315" duration="5124000" />
-      <workItem from="1583303328745" duration="10264000" />
+      <workItem from="1583303328745" duration="14387000" />
+      <workItem from="1583329061813" duration="1015000" />
+      <workItem from="1583392079952" duration="11018000" />
+      <workItem from="1583432753347" duration="3612000" />
+      <workItem from="1583488825324" duration="121000" />
+      <workItem from="1583494333610" duration="10804000" />
+      <workItem from="1583520789473" duration="3454000" />
+      <workItem from="1583573315187" duration="1533000" />
+      <workItem from="1583601213905" duration="5272000" />
+      <workItem from="1583620795956" duration="1592000" />
+      <workItem from="1583654786363" duration="7689000" />
+      <workItem from="1583683994530" duration="3790000" />
+      <workItem from="1583739479911" duration="13165000" />
+      <workItem from="1583777602565" duration="1747000" />
+      <workItem from="1583784868914" duration="1773000" />
+      <workItem from="1583796247808" duration="828000" />
+      <workItem from="1583842883805" duration="1980000" />
+      <workItem from="1583865308290" duration="2834000" />
+      <workItem from="1583934051289" duration="1892000" />
+      <workItem from="1583948239931" duration="5485000" />
+      <workItem from="1584091967813" duration="4779000" />
+      <workItem from="1584113036288" duration="10393000" />
+      <workItem from="1584198633518" duration="710000" />
+      <workItem from="1584204788303" duration="216000" />
+      <workItem from="1584205348446" duration="2379000" />
+      <workItem from="1584238258410" duration="261000" />
+      <workItem from="1584238838317" duration="255000" />
+      <workItem from="1584270331447" duration="2216000" />
+      <workItem from="1584277170388" duration="1770000" />
     </task>
     <task id="LOCAL-00001" summary="gamelist fixed">
       <created>1582943184338</created>
@@ -102,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583262140385</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Faq done">
+      <created>1583323440495</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1583323440496</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +179,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gamelist fixed" />
     <MESSAGE value="Index page done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Index page done" />
+    <MESSAGE value="Faq done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Faq done" />
   </component>
 </project>

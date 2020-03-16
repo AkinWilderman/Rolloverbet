@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet, ScrollView} from 'react-native';
-import FreeTipDetail from './FreeTipDetail';
+import TipDetail from '../TipDetail';
 import axios from 'axios';
 
 class FiftyOddsWeekly extends Component {
@@ -12,11 +12,11 @@ class FiftyOddsWeekly extends Component {
       .then(response => this.setState({tips: response.data}));
   }
 
-  // function to render the array of games in FreeTipDetail
-  renderFreeTips() {
-    const reversed = this.state.freetips.reverse();
-    return reversed.map(freetip => (
-      <FreeTipDetail key={freetip.id} game={freetip} />
+  // function to render the array of games in TipDetail
+  renderTips() {
+    const reversed = this.state.tips.reverse();
+    return reversed.map(tip => (
+      <TipDetail key={tip.id} game={tip} />
     ));
   }*/
 
@@ -30,7 +30,7 @@ class FiftyOddsWeekly extends Component {
             business, not a get rich quick scheme. Invest with us!
           </Text>
         </View>
-        {/*<View>{this.renderFreeTips()}</View>*/}
+        {/*<View>{this.renderTips()}</View>*/}
       </ScrollView>
     );
   }

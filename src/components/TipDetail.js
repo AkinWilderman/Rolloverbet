@@ -7,7 +7,7 @@ import {ScrollView, View, StyleSheet, Text} from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
 
-const FreeTipDetail = props => {
+const TipDetail = props => {
   let gameResult = props.game.result;
   return (
     <View>
@@ -181,4 +181,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default FreeTipDetail;
+export default TipDetail;
