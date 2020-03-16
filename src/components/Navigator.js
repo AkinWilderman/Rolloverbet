@@ -7,7 +7,6 @@ import TwoOddsDaily from './premium/TwoOddsDaily';
 import FiftyOddsWeekly from './premium/FiftyOddsWeekly';
 import Accumulator from './premium/Accumulator';
 import Faq from './support/Faq';
-import Payment from './payment/Payment';
 
 const APPNavigator = createStackNavigator({
   Home: {

@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ab5d844-a44d-4bfa-ba7a-422f3075c078" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/free/FreeTip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/free/LiveMatches.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/payment/Payment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/payment/Subscribe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/support/Support.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Accumulator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/premium/Accumulator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/support/Faq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FaqDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/support/FaqDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FiftyOddsWeekly.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/premium/FiftyOddsWeekly.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FreeTip.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FreeTipDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TipDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TwoOddsDaily.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/premium/TwoOddsDaily.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TipDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TipDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/free/FreeTip.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/free/FreeTip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/premium/TwoOddsDaily.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/premium/TwoOddsDaily.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -135,6 +120,8 @@
       <workItem from="1584238838317" duration="255000" />
       <workItem from="1584270331447" duration="2216000" />
       <workItem from="1584277170388" duration="1770000" />
+      <workItem from="1584354815612" duration="601000" />
+      <workItem from="1584379221537" duration="7329000" />
     </task>
     <task id="LOCAL-00001" summary="gamelist fixed">
       <created>1582943184338</created>

@@ -14,72 +14,23 @@ const TipDetail = props => {
       <Card>
         <CardSection>
           <View style={styles.dateCard}>
-            <Text
-              style={[
-                gameResult === 'won'
-                  ? styles.wonColor
-                  : gameResult === 'lost'
-                  ? styles.lostColor
-                  : {color: '#D69137'},
-              ]}>
-              {' '}
-              {props.game.date}
-            </Text>
-            <Text
-              style={[
-                gameResult === 'won'
-                  ? styles.wonColor
-                  : gameResult === 'lost'
-                  ? styles.lostColor
-                  : {color: '#D69137', fontWeight: 'bold', fontSize: 20},
-              ]}>
+            <Text style={{color: '#D69137'}}> {props.game.date}</Text>
+            <Text style={{color: '#D69137', fontWeight: 'bold', fontSize: 20}}>
               {props.game.time}
             </Text>
-            <Text
-              style={[
-                gameResult === 'won'
-                  ? styles.wonColor
-                  : gameResult === 'lost'
-                  ? styles.lostColor
-                  : {color: '#D69137'},
-              ]}>
-              {props.game.id}
-            </Text>
+            <Text style={{color: '#D69137'}}>{props.game.id}</Text>
           </View>
           <View style={styles.gameCard}>
-            <Text
-              style={[
-                gameResult === 'won'
-                  ? styles.wonColor
-                  : gameResult === 'lost'
-                  ? styles.lostColor
-                  : styles.predictionText,
-              ]}>
-              {' '}
-              -{props.game.home} -
-            </Text>
-            <Text
-              style={[
-                gameResult === 'won'
-                  ? styles.wonColor
-                  : gameResult === 'lost'
-                  ? styles.lostColor
-                  : styles.predictionText,
-              ]}>
-              -{props.game.away}{' '}
-            </Text>
-            <Text
-              style={[
-                gameResult === 'won'
-                  ? styles.wonColor
-                  : gameResult === 'lost'
-                  ? styles.lostColor
-                  : styles.predictionText,
-              ]}>
-              -{props.game.prediction}{' '}
-            </Text>
+            <Text style={styles.predictionText}> -{props.game.home} -</Text>
+            <Text style={styles.predictionText}>-{props.game.away} </Text>
+            <Text style={styles.predictionText}>-{props.game.prediction} </Text>
           </View>
           <View style={styles.dateCard}>
+            <Text style={{color: '#D69137', fontWeight: 'bold'}}>
+              {props.game.Country} {''}
+            </Text>
+            <Text style={{color: '#D69137'}}>{props.game.competition}</Text>
+            <Text style={{color: '#D69137'}}>{props.game.certainty}</Text>
             <Text
               style={[
                 gameResult === 'won'
@@ -87,36 +38,6 @@ const TipDetail = props => {
                   : gameResult === 'lost'
                   ? styles.lostColor
                   : {color: '#D69137', fontWeight: 'bold'},
-              ]}>
-              {props.game.Country} {''}
-            </Text>
-            <Text
-              style={[
-                gameResult === 'won'
-                  ? styles.wonColor
-                  : gameResult === 'lost'
-                  ? styles.lostColor
-                  : {color: '#D69137'},
-              ]}>
-              {props.game.competition}
-            </Text>
-            <Text
-              style={[
-                gameResult === 'won'
-                  ? styles.wonColor
-                  : gameResult === 'lost'
-                  ? styles.lostColor
-                  : {color: '#D69137'},
-              ]}>
-              {props.game.certainty}
-            </Text>
-            <Text
-              style={[
-                gameResult === 'won'
-                  ? styles.wonColor
-                  : gameResult === 'lost'
-                  ? styles.lostColor
-                  : {color: '#D69137'},
               ]}>
               {' '}
               {props.game.odds}{' '}

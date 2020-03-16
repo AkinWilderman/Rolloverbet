@@ -5,33 +5,26 @@ import axios from 'axios';
 import Header from '../Header';
 
 class TwoOddsDaily extends Component {
-  /*state = {tips: []};
+  state = {tips: []};
 
   UNSAFE_componentWillMount() {
     axios
-      .get('https://5e521449.ngrok.io')
+      .get('https://rollovertips.herokuapp.com/two_odds')
       .then(response => this.setState({tips: response.data}));
   }
 
   // function to render the array of games in TipDetail
   renderTips() {
-    const reversed = this.state.tips.reverse();
-    return reversed.map(tip => (
-      <TipDetail key={tip.id} game={tip} />
-    ));
-  }*/
+    const sorted = this.state.tips.sort((a, b) => (a.id > b.id ? 1 : -1));
+    const reversed = sorted.reverse();
+    return reversed.map(tip => <TipDetail key={tip.id} game={tip} />);
+  }
 
   // render method for the class
   render() {
     return (
       <ScrollView style={styles.container}>
-        <View style={styles.warningView}>
-          <Text style={styles.warningText}>
-            Bet Responsibly, don't bet with your last money. Sport betting is a
-            business, not a get rich quick scheme. Invest with us!
-          </Text>
-        </View>
-        {/*<View>{this.renderTips()}</View>*/}
+        <View>{this.renderTips()}</View>
       </ScrollView>
     );
   }

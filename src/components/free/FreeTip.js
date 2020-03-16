@@ -22,7 +22,7 @@ class Tip extends Component {
 
   UNSAFE_componentWillMount() {
     axios
-      .get('https://9d81fd9d.ngrok.io')
+      .get('https://rollovertips.herokuapp.com/')
       .then(response => this.setState({tips: response.data}));
   }
 
@@ -57,7 +57,8 @@ class Tip extends Component {
 
   // function to render the array of games in TipDetail
   renderTips() {
-    const reversed = this.state.tips.reverse();
+    const sorted = this.state.tips.sort((a, b) => (a.id > b.id ? 1 : -1));
+    const reversed = sorted.reverse();
     return reversed.map(tip => <TipDetail key={tip.id} game={tip} />);
   }
   // AdMobRewarded
