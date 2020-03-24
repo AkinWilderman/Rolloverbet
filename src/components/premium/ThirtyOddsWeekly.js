@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet, ScrollView} from 'react-native';
-import TipDetail from '../TipDetail';
+import TipDetail from '../others/TipDetail';
 import axios from 'axios';
 
-class FiftyOddsWeekly extends Component {
+class ThirtyOddsWeekly extends Component {
   /*state = {tips: []};
 
   UNSAFE_componentWillMount() {
@@ -22,17 +22,7 @@ class FiftyOddsWeekly extends Component {
 
   // render method for the class
   render() {
-    return (
-      <ScrollView>
-        <View style={styles.warningView}>
-          <Text style={styles.warningText}>
-            Bet Responsibly, don't bet with your last money. Sport betting is a
-            business, not a get rich quick scheme. Invest with us!
-          </Text>
-        </View>
-        {/*<View>{this.renderTips()}</View>*/}
-      </ScrollView>
-    );
+    return <ScrollView>{/*<View>{this.renderTips()}</View>*/}</ScrollView>;
   }
 }
 
@@ -50,4 +40,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default FiftyOddsWeekly;
+export default ThirtyOddsWeekly;

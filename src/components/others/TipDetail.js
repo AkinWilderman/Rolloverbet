@@ -14,30 +14,30 @@ const TipDetail = props => {
       <Card>
         <CardSection>
           <View style={styles.dateCard}>
-            <Text style={{color: '#D69137'}}> {props.game.date}</Text>
-            <Text style={{color: '#D69137', fontWeight: 'bold', fontSize: 20}}>
+            <Text style={{color: '#D69137', textAlign: 'center'}}> {props.game.date}</Text>
+            <Text style={{color: '#D69137', fontWeight: 'bold', fontSize: 20, textAlign: 'center'}}>
               {props.game.time}
             </Text>
-            <Text style={{color: '#D69137'}}>{props.game.id}</Text>
+            <Text style={{color: '#D69137', textAlign: 'center'}}>{props.game.id}</Text>
           </View>
           <View style={styles.gameCard}>
             <Text style={styles.predictionText}> -{props.game.home} -</Text>
             <Text style={styles.predictionText}>-{props.game.away} </Text>
-            <Text style={styles.predictionText}>-{props.game.prediction} </Text>
+            <Text style={styles.predictionText}>{props.game.prediction}  </Text>
           </View>
           <View style={styles.dateCard}>
-            <Text style={{color: '#D69137', fontWeight: 'bold'}}>
+            <Text style={{color: '#D69137', fontWeight: 'bold', textAlign: 'center'}}>
               {props.game.Country} {''}
             </Text>
-            <Text style={{color: '#D69137'}}>{props.game.competition}</Text>
-            <Text style={{color: '#D69137'}}>{props.game.certainty}</Text>
+            <Text style={{color: '#D69137', textAlign: 'center'}}>{props.game.competition}</Text>
+            <Text style={{color: '#D69137', textAlign: 'center'}}>{props.game.certainty}</Text>
             <Text
               style={[
                 gameResult === 'won'
                   ? styles.wonColor
                   : gameResult === 'lost'
                   ? styles.lostColor
-                  : {color: '#D69137', fontWeight: 'bold'},
+                  : {color: '#D69137', fontWeight: 'bold', textAlign: 'center'},
               ]}>
               {' '}
               {props.game.odds}{' '}
@@ -93,6 +93,7 @@ const styles = StyleSheet.create({
   },
   predictionText: {
     color: '#fff',
+    textAlign: 'center',
   },
   wonColor: {
     color: '#79AF1B',

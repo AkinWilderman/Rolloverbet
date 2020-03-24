@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
 import {StyleSheet, View, StatusBar, Platform} from 'react-native';
-import StackNavigator from './src/components/Navigator';
-import {
-  AdMobBanner,
-  AdMobInterstitial,
-  PublisherBanner,
-  AdMobRewarded,
-} from 'expo-ads-admob';
+import StackNavigator from './src/components/others/Navigator';
+import axios from 'axios';
 
 export default class App extends Component {
+  UNSAFE_componentWillMount() {
+    axios.get('https://api.ravepay.co/v2/gpx/paymentplans/query').then()
+  }
+
   render() {
     return (
       <View style={styles.container}>

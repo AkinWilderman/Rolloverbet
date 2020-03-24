@@ -1,12 +1,13 @@
 import React from 'react';
 import {createStackNavigator} from 'react-navigation-stack';
 import {createAppContainer} from 'react-navigation';
-import FreeTip from './free/FreeTip';
+import FreeTip from '../free/FreeTip';
 import Index from './Index';
-import TwoOddsDaily from './premium/TwoOddsDaily';
-import FiftyOddsWeekly from './premium/FiftyOddsWeekly';
-import Accumulator from './premium/Accumulator';
-import Faq from './support/Faq';
+import TwoOddsDaily from '../premium/TwoOddsDaily';
+import ThirtyOddsWeekly from '../premium/ThirtyOddsWeekly';
+import Accumulator from '../premium/Accumulator';
+import Faq from '../support/Faq';
+import Payment from '../payment/Payment';
 
 const APPNavigator = createStackNavigator({
   Home: {
@@ -36,10 +37,10 @@ const APPNavigator = createStackNavigator({
       headerStatusBarHeight: 0,
     },
   },
-  FiftyOdds: {
-    screen: FiftyOddsWeekly,
+  ThirtyOdds: {
+    screen: ThirtyOddsWeekly,
     navigationOptions: {
-      headerTitle: '50 Odds Weekly',
+      headerTitle: '30 Odds Weekly',
       headerStatusBarHeight: 0,
     },
   },
@@ -48,6 +49,12 @@ const APPNavigator = createStackNavigator({
     navigationOptions: {
       headerTitle: 'FAQs',
       headerStatusBarHeight: 0,
+    },
+  },
+  Payment: {
+    screen: Payment,
+    navigationOptions: {
+      headerShown: false,
     },
   },
 });

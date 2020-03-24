@@ -1,34 +1,33 @@
 import React, {Component} from 'react';
-import {Text, View, StyleSheet, ScrollView, Button} from 'react-native';
-import TipDetail from '../TipDetail';
+import {
+  Text,
+  View,
+  StyleSheet,
+  ScrollView,
+  ActivityIndicator,
+  RefreshControl,
+} from 'react-native';
+import TipDetail from '../others/TipDetail';
 import axios from 'axios';
-import {AdMobInterstitial, AdMobRewarded} from 'expo-ads-admob';
-import Index from '../Index';
+import {AdMobRewarded, PublisherBanner} from 'expo-ads-admob';
+import Index from '../others/Index';
 
 class Tip extends Component {
-  /*_openRewarded = async () => {
-    try {
-      this.setState({disableRewardedBtn: true});
-      await AdMobRewarded.requestAdAsync();
-      await AdMobRewarded.showAdAsync();
-    } catch (error) {
-      console.error(error);
-    } finally {
-      this.setState({disableRewardedBtn: false});
-    }
-  };*/
+  state = {tips: [], isLoading: true};
 
-  state = {tips: []};
-
-  UNSAFE_componentWillMount() {
+  GetData = () => {
     axios
       .get('https://rollovertips.herokuapp.com/')
-      .then(response => this.setState({tips: response.data}));
+      .then(response => this.setState({tips: response.data, isLoading: false}));
+  };
+
+  UNSAFE_componentWillMount() {
+    this.GetData();
   }
 
-  returnIndex() {
+  Adclose = () => {
     return <Index />;
-  }
+  };
 
   componentDidMount() {
     AdMobRewarded.addEventListener('rewardedVideoDidRewardUser', () =>
@@ -44,7 +43,8 @@ class Tip extends Component {
       console.log('Opened'),
     );
     AdMobRewarded.addEventListener('rewardedVideoDidClose', () => {
-      return () => this.props.navigation.navigate('Homee');
+      this.Adclose();
+      console.log('closed');
     });
     AdMobRewarded.addEventListener('rewardedVideoWillLeaveApplication', () => {
       return () => this.props.navigation.navigate('Home');
@@ -61,6 +61,7 @@ class Tip extends Component {
     const reversed = sorted.reverse();
     return reversed.map(tip => <TipDetail key={tip.id} game={tip} />);
   }
+
   // AdMobRewarded
   // ca-app-pub-3763838117475589/3073752020 -  Real Ads Id
   // ca-app-pub-3940256099942544/5224354917 - Google test Id
@@ -70,23 +71,58 @@ class Tip extends Component {
         AdMobRewarded.requestAdAsync().then(() => AdMobRewarded.showAdAsync()),
     );
   };
+
+  // refresh method
+  onRefresh() {
+    //Call the Service to get the latest data
+    this.GetData();
+  }
+
   // render method for the class
   render() {
     // eslint-disable-next-line no-lone-blocks
     {
       this.ShowAdRewarded();
     }
-    return (
-      <ScrollView style={styles.container}>
-        <View style={styles.warningView}>
-          <Text style={styles.warningText}>
-            Bet Responsibly. Sport betting is a business. Become a premium
-            member and make money with us!
-          </Text>
+    if (this.state.isLoading) {
+      return (
+        <View style={styles.activityContainer}>
+          {/*Code to show Activity Indicator*/}
+          <ActivityIndicator size="large" color="#0000ff" />
+          {/*Size can be large/ small*/}
         </View>
-        <View>{this.renderTips()}</View>
-      </ScrollView>
-    );
+      );
+    } else {
+      return (
+        <View style={styles.container}>
+          <ScrollView
+            refreshControl={
+              <RefreshControl
+                //refresh control used for the Pull to Refresh
+                refreshing={this.state.isLoading}
+                onRefresh={this.onRefresh.bind(this)}
+              />
+            }>
+            <View style={styles.warningView}>
+              <Text style={styles.warningText}>
+                Bet Responsibly. Become a premium member and make lots of money!
+              </Text>
+            </View>
+            <View>{this.renderTips()}</View>
+          </ScrollView>
+          <View style={styles.IndexAD}>
+            <PublisherBanner
+              bannerSize="largeBanner"
+              // ca-app-pub-3763838117475589/4846557176 - Real ads ID
+              // ca-app-pub-3940256099942544/6300978111 - Test ID
+              adUnitID="ca-app-pub-3763838117475589/4846557176"
+              servePersonalizedAds={true}
+              onDidFailToReceiveAdWithError={this.bannerError}
+            />
+          </View>
+        </View>
+      );
+    }
   }
 }
 
@@ -105,6 +141,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 5,
+  },
+  activityContainer: {
+    flex: 1,
+    justifyContent: 'center',
+  },
+  IndexAD: {
+    alignItems: 'center',
+    margin: '3%',
   },
 });
 

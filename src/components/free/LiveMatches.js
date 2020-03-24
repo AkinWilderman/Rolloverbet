@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Text, View, StyleSheet, ScrollView} from 'react-native';
-import TipDetail from '../TipDetail';
+import TipDetail from '../others/TipDetail';
 import axios from 'axios';
 
 class LiveMatches extends Component {

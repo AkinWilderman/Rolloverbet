@@ -1,5 +1,5 @@
-import Rave from 'react-native-rave';
 import React, {Component} from 'react';
+import {WebView} from 'react-native-webview';
 
 class Payment extends Component {
   constructor(props) {
@@ -23,24 +23,9 @@ class Payment extends Component {
 
   render() {
     return (
-      <Rave
-        amount="8.99"
-        country="NG"
-        currency="USD"
-        paymentplan="4864"
-        paymentOption="card,account"
-        email="test@mail.com"
-        firstname="Akinkunle"
-        lastname="Akingbala"
-        publickey="FLWPUBK_TEST-7a15f68c347706fe62c83873afe3625c-X"
-        encryptionkey="FLWSECK_TESTa2f2229a797a"
-        meta={[
-          {metaname: 'color', metavalue: 'red'},
-          {metaname: 'storelocation', metavalue: 'Lagos'},
-        ]}
-        onSuccess={res => this.onSuccess(res)}
-        onFailure={e => this.onFailure(e)}
-        onClose={e => this.onClose(e)}
+      <WebView
+        source={{uri: 'https://flutterwave.com/pay/59bjdwockwqo'}}
+        javaScriptEnabled={true}
       />
     );
   }

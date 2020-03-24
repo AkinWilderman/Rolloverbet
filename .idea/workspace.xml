@@ -2,11 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ab5d844-a44d-4bfa-ba7a-422f3075c078" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/others/Loader.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TipDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TipDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/others/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CardSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/others/CardSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/others/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/others/Index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/others/Navigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TipDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/others/TipDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/free/FreeTip.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/free/FreeTip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/free/LiveMatches.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/free/LiveMatches.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/payment/Payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/payment/Payment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/premium/Accumulator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/premium/Accumulator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/premium/FiftyOddsWeekly.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/premium/ThirtyOddsWeekly.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/premium/TwoOddsDaily.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/premium/TwoOddsDaily.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support/Faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/support/Faq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leaveAlone.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leaveAlone.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +48,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Planty" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-native-uber-eats-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -44,18 +59,18 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\media" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\components\others" />
       <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\components\support" />
       <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\components\payment" />
       <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\components" />
       <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\components\free" />
-      <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\components\premium" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\media" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -121,7 +136,22 @@
       <workItem from="1584270331447" duration="2216000" />
       <workItem from="1584277170388" duration="1770000" />
       <workItem from="1584354815612" duration="601000" />
-      <workItem from="1584379221537" duration="7329000" />
+      <workItem from="1584379221537" duration="7474000" />
+      <workItem from="1584530090873" duration="4006000" />
+      <workItem from="1584560222771" duration="6151000" />
+      <workItem from="1584626425269" duration="1556000" />
+      <workItem from="1584693991022" duration="15739000" />
+      <workItem from="1584726756873" duration="968000" />
+      <workItem from="1584736997496" duration="6090000" />
+      <workItem from="1584746632365" duration="6781000" />
+      <workItem from="1584756298228" duration="2864000" />
+      <workItem from="1584760597400" duration="2335000" />
+      <workItem from="1584780803134" duration="2912000" />
+      <workItem from="1584810418575" duration="3003000" />
+      <workItem from="1584868838170" duration="1393000" />
+      <workItem from="1584901573731" duration="9470000" />
+      <workItem from="1584986922795" duration="8859000" />
+      <workItem from="1585070449707" duration="2359000" />
     </task>
     <task id="LOCAL-00001" summary="gamelist fixed">
       <created>1582943184338</created>
@@ -144,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583323440496</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fetch from API">
+      <created>1584391380386</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584391380386</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +204,7 @@
     <MESSAGE value="gamelist fixed" />
     <MESSAGE value="Index page done" />
     <MESSAGE value="Faq done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Faq done" />
+    <MESSAGE value="fetch from API" />
+    <option name="LAST_COMMIT_MESSAGE" value="fetch from API" />
   </component>
 </project>

@@ -7,15 +7,14 @@ class Faq extends Component {
   state = {faq: []};
   UNSAFE_componentWillMount() {
     axios
-      .get('https://9d81fd9d.ngrok.io')
+      .get('https://rollovertips.herokuapp.com/faq')
       .then(res => this.setState({faq: res.data}));
   }
 
   // render function for each faq
   renderFaq() {
-    return this.state.faq.map(faq => (
-      <FaqDetail key={faq.question} faq={faq} />
-    ));
+    const sorted = this.state.faq.sort((a, b) => (a.id > b.id ? 1 : -1));
+    return sorted.map(faq => <FaqDetail key={faq.question} faq={faq} />);
   }
 
   render() {
