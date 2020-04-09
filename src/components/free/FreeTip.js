@@ -21,31 +21,37 @@ class Tip extends Component {
       .then(response => this.setState({tips: response.data, isLoading: false}));
   };
 
-  UNSAFE_componentWillMount() {
-    this.GetData();
-  }
+  /*UNSAFE_componentWillMount() {
+  }*/
 
   Adclose = () => {
     return <Index />;
   };
 
   componentDidMount() {
+    this.GetData();
+
     AdMobRewarded.addEventListener('rewardedVideoDidRewardUser', () =>
       console.log('Rewarded'),
     );
+
     AdMobRewarded.addEventListener('rewardedVideoDidLoad', () =>
       console.log('VideoLoaded'),
     );
+
     AdMobRewarded.addEventListener('rewardedVideoDidFailToLoad', () =>
       console.log('FailedToLoad'),
     );
+
     AdMobRewarded.addEventListener('rewardedVideoDidOpen', () =>
       console.log('Opened'),
     );
+
     AdMobRewarded.addEventListener('rewardedVideoDidClose', () => {
       this.Adclose();
       console.log('closed');
     });
+
     AdMobRewarded.addEventListener('rewardedVideoWillLeaveApplication', () => {
       return () => this.props.navigation.navigate('Home');
     });

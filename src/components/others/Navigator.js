@@ -7,7 +7,11 @@ import TwoOddsDaily from '../premium/TwoOddsDaily';
 import ThirtyOddsWeekly from '../premium/ThirtyOddsWeekly';
 import Accumulator from '../premium/Accumulator';
 import Faq from '../support/Faq';
-import Payment from '../payment/Payment';
+import Daily from '../payment/Daily';
+import Support from '../support/Support';
+import Weekly from '../payment/Weekly';
+import Monthly from '../payment/Monthly';
+import Subscribe from '../payment/Subscribe';
 
 const APPNavigator = createStackNavigator({
   Home: {
@@ -51,10 +55,32 @@ const APPNavigator = createStackNavigator({
       headerStatusBarHeight: 0,
     },
   },
-  Payment: {
-    screen: Payment,
+  Daily: {
+    screen: Daily,
     navigationOptions: {
-      headerShown: false,
+      headerTitle: 'Daily Subscription',
+      headerStatusBarHeight: 0,
+    },
+  },
+  Weekly: {
+    screen: Weekly,
+    navigationOptions: {
+      headerTitle: 'Weekly Subscription',
+      headerStatusBarHeight: 0,
+    },
+  },
+  Monthly: {
+    screen: Monthly,
+    navigationOptions: {
+      headerTitle: 'Monthly Subscription',
+      headerStatusBarHeight: 0,
+    },
+  },
+  Subscribe: {
+    screen: Subscribe,
+    navigationOptions: {
+      headerTitle: 'Subscribe',
+      headerStatusBarHeight: 0,
     },
   },
 });

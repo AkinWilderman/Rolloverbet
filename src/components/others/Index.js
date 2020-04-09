@@ -87,7 +87,7 @@ class Index extends Component {
           </View>
         </TouchableOpacity>
         <TouchableOpacity
-          onPress={() => this.props.navigation.navigate('Payment')}>
+          onPress={() => this.props.navigation.navigate('Subscribe')}>
           <View style={styles.belowItems}>
             <Image
               source={require('../../media/subscribe.png')}

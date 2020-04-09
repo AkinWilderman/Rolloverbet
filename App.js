@@ -4,9 +4,6 @@ import StackNavigator from './src/components/others/Navigator';
 import axios from 'axios';
 
 export default class App extends Component {
-  UNSAFE_componentWillMount() {
-    axios.get('https://api.ravepay.co/v2/gpx/paymentplans/query').then()
-  }
 
   render() {
     return (

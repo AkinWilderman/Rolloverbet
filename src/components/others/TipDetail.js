@@ -15,7 +15,13 @@ const TipDetail = props => {
         <CardSection>
           <View style={styles.dateCard}>
             <Text style={{color: '#D69137', textAlign: 'center'}}> {props.game.date}</Text>
-            <Text style={{color: '#D69137', fontWeight: 'bold', fontSize: 20, textAlign: 'center'}}>
+            <Text
+              style={{
+                color: '#D69137',
+                fontWeight: 'bold',
+                fontSize: 20,
+                textAlign: 'center',
+              }}>
               {props.game.time}
             </Text>
             <Text style={{color: '#D69137', textAlign: 'center'}}>{props.game.id}</Text>
