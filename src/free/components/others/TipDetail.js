@@ -24,19 +24,32 @@ const TipDetail = props => {
               }}>
               {props.game.time}
             </Text>
-            <Text style={{color: '#D69137', textAlign: 'center'}}>{props.game.id}</Text>
+            <Text style={{color: '#D69137', textAlign: 'center'}}>
+              {props.game.id}
+            </Text>
           </View>
           <View style={styles.gameCard}>
-            <Text style={styles.predictionText}> -{props.game.home} -</Text>
-            <Text style={styles.predictionText}>-{props.game.away} </Text>
-            <Text style={styles.predictionText}>{props.game.prediction}  </Text>
+            <Text style={styles.predictionText}>- {props.game.home} -</Text>
+            <Text style={styles.predictionText}>- {props.game.away} -</Text>
+            <Text style={styles.predictionText}>
+              - {props.game.prediction} -
+            </Text>
           </View>
           <View style={styles.dateCard}>
-            <Text style={{color: '#D69137', fontWeight: 'bold', textAlign: 'center'}}>
-              {props.game.Country} {''}
+            <Text
+              style={{
+                color: '#D69137',
+                fontWeight: 'bold',
+                textAlign: 'center',
+              }}>
+              {props.game.Country}
             </Text>
-            <Text style={{color: '#D69137', textAlign: 'center'}}>{props.game.competition}</Text>
-            <Text style={{color: '#D69137', textAlign: 'center'}}>{props.game.certainty}</Text>
+            <Text style={{color: '#D69137', textAlign: 'center'}}>
+              {props.game.competition}
+            </Text>
+            <Text style={{color: '#D69137', textAlign: 'center'}}>
+              {props.game.certainty}
+            </Text>
             <Text
               style={[
                 gameResult === 'won'
@@ -57,7 +70,7 @@ const TipDetail = props => {
 
 const styles = StyleSheet.create({
   dateCard: {
-    backgroundColor: '#2D3A4A',
+    backgroundColor: 'white',
     borderWidth: 1,
     borderRadius: 2,
     borderColor: '#1D252E',
@@ -76,7 +89,7 @@ const styles = StyleSheet.create({
     width: '23%',
   },
   gameCard: {
-    backgroundColor: '#2D3A4A',
+    backgroundColor: 'white',
     borderWidth: 1,
     borderRadius: 2,
     borderColor: '#1D252E',
@@ -98,8 +111,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   predictionText: {
-    color: '#fff',
+    color: '#000',
     textAlign: 'center',
+    fontWeight: 'bold',
   },
   wonColor: {
     color: '#79AF1B',

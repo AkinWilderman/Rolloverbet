@@ -1,0 +1,68 @@
+{
+  "status": "success",
+  "message": "QUERIED-TRANSACTIONS",
+  "data": {
+    "page_info": {
+      "total": 1,
+      "current_page": 1,
+      "total_pages": 1
+    },
+    "transactions": [
+      {
+        "id": "248934580",
+        "transaction_reference": "Rave-Pages450922920425",
+        "processor_reference": "AkinkunleGROUP/FLW224407177",
+        "device_fingerprint": "1e034adcae331c34f0e7fc1768bb024b",
+        "transaction_cycle": "one-time",
+        "amount": 3,
+        "currency": "NGN",
+        "amount_charged": 3,
+        "rave_fee": 0.05,
+        "merchant_fee": 0,
+        "merchant_bore_fee": 1,
+        "processor_response_code": "00",
+        "processor_response_message": "Kindly enter the OTP sent to 234806***1881",
+        "auth_model": "PIN",
+        "customer_ip": "41.190.3.62",
+        "narration": "CARD Transaction ",
+        "status": "successful",
+        "processor_verification_url": "N/A",
+        "processor_vbv_response_code": "00",
+        "processor_vbv_response_message": "Approved by Financial Institution",
+        "processor_acct_response_code": null,
+        "processor_acct_response_message": null,
+        "payment_entity": "card",
+        "payment_entity_id": "3518239",
+        "fraud_status": "ok",
+        "date_created": "2020-03-22T23:37:27.000Z",
+        "unique_reference": "URF_1584920247693_6520535",
+        "has_events": "27950360eadb21a7c9ec8b5ccc9fd366",
+        "amount_due_merchant": 2.95,
+        "customer": {
+          "id": "190494556",
+          "customer_email": "akinkunledavid9@gmail.com",
+          "customer_phonenumber": null,
+          "customer_fullname": "Akinkunle Akingbala",
+          "date_created": "2020-03-22T23:37:27.000Z"
+        },
+        "card": {
+          "id": "3518239",
+          "masked_pan": "536613*********7878",
+          "expiry_year": "20",
+          "expiry_month": "06",
+          "bin": "536613",
+          "type": "MASTERCARD",
+          "country": "NIGERIA NG",
+          "issuer_info": "MASTERCARD ACCESS BANK PLC  CREDIT",
+          "date_created": "Wed Jul 24 2019 13:13:43 GMT+0000 (UTC)"
+        },
+        "merchant": {
+          "id": "2771",
+          "business_name": "AkinkunleGROUP",
+          "country": "NG",
+          "contact_person": "Akinkunle Akingbala"
+        }
+      }
+    ]
+  }
+}

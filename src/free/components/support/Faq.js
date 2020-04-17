@@ -4,7 +4,8 @@ import axios from 'axios';
 import FaqDetail from './FaqDetail';
 
 class Faq extends Component {
-  state = {faq: []};
+  state = {faq: [], isLoading: true};
+
   UNSAFE_componentWillMount() {
     axios
       .get('https://rollovertips.herokuapp.com/faq')

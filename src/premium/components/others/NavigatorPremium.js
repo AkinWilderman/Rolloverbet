@@ -1,17 +1,14 @@
 import React from 'react';
 import {createStackNavigator} from 'react-navigation-stack';
 import {createAppContainer} from 'react-navigation';
-import FreeTip from '../free/FreeTip';
-import Index from './Index';
+import FreeTip from '../free/FreeTipPremium';
+import Index from './IndexPremium';
 import TwoOddsDaily from '../premium/TwoOddsDaily';
 import ThirtyOddsWeekly from '../premium/ThirtyOddsWeekly';
 import Accumulator from '../premium/Accumulator';
-import Faq from '../support/Faq';
-import Daily from '../payment/Daily';
+import Faq from '../support/FaqPremium';
 import Support from '../support/Support';
-import Weekly from '../payment/Weekly';
-import Monthly from '../payment/Monthly';
-import Subscribe from '../payment/Subscribe';
+import Activate from '../premium/Activate';
 
 const APPNavigator = createStackNavigator({
   Home: {
@@ -52,34 +49,6 @@ const APPNavigator = createStackNavigator({
     screen: Faq,
     navigationOptions: {
       headerTitle: 'FAQs',
-      headerStatusBarHeight: 0,
-    },
-  },
-  Daily: {
-    screen: Daily,
-    navigationOptions: {
-      headerTitle: 'Daily Subscription',
-      headerStatusBarHeight: 0,
-    },
-  },
-  Weekly: {
-    screen: Weekly,
-    navigationOptions: {
-      headerTitle: 'Weekly Subscription',
-      headerStatusBarHeight: 0,
-    },
-  },
-  Monthly: {
-    screen: Monthly,
-    navigationOptions: {
-      headerTitle: 'Monthly Subscription',
-      headerStatusBarHeight: 0,
-    },
-  },
-  Subscribe: {
-    screen: Subscribe,
-    navigationOptions: {
-      headerTitle: 'Subscribe',
       headerStatusBarHeight: 0,
     },
   },

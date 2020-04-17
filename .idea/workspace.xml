@@ -1,22 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ab5d844-a44d-4bfa-ba7a-422f3075c078" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/payment/Monthly.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/payment/Weekly.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/test.json" afterDir="false" />
+    <list default="true" id="7ab5d844-a44d-4bfa-ba7a-422f3075c078" name="Default Changelist" comment="payment">
+      <change afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/free/components/premium/Activate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/media/activate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/media/click.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/free/FreeTipPremium.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/free/LiveMatches_premium.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/others/Card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/others/CardSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/others/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/others/IndexPremium.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/others/NavigatorPremium.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/others/TipDetailPremium.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/payment/Daily.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/payment/Monthly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/payment/Subscribe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/payment/Weekly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/premium/Accumulator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/premium/Activate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/premium/ThirtyOddsWeekly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/premium/TwoOddsDaily.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/support/FaqDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/support/FaqPremium.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/support/Support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/premium/components/test.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Akinkunle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/Akinkunle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/free/FreeTip.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/free/FreeTip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/others/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/others/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/others/Navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/others/Navigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/others/TipDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/others/TipDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/payment/Payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/payment/Daily.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/payment/Subscribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/payment/Subscribe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/free/FreeTip.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/free/FreeTip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/free/LiveMatches.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/free/LiveMatches.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/others/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/others/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/others/CardSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/others/CardSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/others/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/others/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/others/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/others/Index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/others/Loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/others/Loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/others/Navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/others/Navigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/others/TipDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/others/TipDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/payment/Daily.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/payment/Daily.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/payment/Monthly.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/payment/Monthly.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/payment/Subscribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/payment/Subscribe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/payment/Weekly.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/payment/Weekly.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/premium/Accumulator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/premium/Accumulator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/premium/ThirtyOddsWeekly.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/premium/ThirtyOddsWeekly.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/premium/TwoOddsDaily.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/premium/TwoOddsDaily.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support/Faq.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/support/Faq.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support/FaqDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/support/FaqDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/support/Support.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/support/Support.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/test.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/test.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +77,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/payment" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/premium" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -60,15 +93,16 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\free" />
       <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src" />
       <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\components\others" />
       <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\components\support" />
       <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\components\payment" />
-      <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\components" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\components\payment" />
+      <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\premium" />
       <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\media" />
+      <recent name="C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\src\components\payment" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -175,7 +209,22 @@
       <workItem from="1586299114397" duration="275000" />
       <workItem from="1586343188816" duration="651000" />
       <workItem from="1586365278278" duration="3068000" />
-      <workItem from="1586389156084" duration="16447000" />
+      <workItem from="1586389156084" duration="22295000" />
+      <workItem from="1586445967845" duration="11565000" />
+      <workItem from="1586510014849" duration="14451000" />
+      <workItem from="1586548456748" duration="4705000" />
+      <workItem from="1586593849809" duration="8773000" />
+      <workItem from="1586649890045" duration="513000" />
+      <workItem from="1586652199551" duration="190000" />
+      <workItem from="1586652773168" duration="12875000" />
+      <workItem from="1586765719474" duration="8092000" />
+      <workItem from="1586819780453" duration="11428000" />
+      <workItem from="1586868850177" duration="5727000" />
+      <workItem from="1586894755331" duration="2709000" />
+      <workItem from="1586948648488" duration="14686000" />
+      <workItem from="1586987778641" duration="33233000" />
+      <workItem from="1587084515017" duration="1199000" />
+      <workItem from="1587106234228" duration="1570000" />
     </task>
     <task id="LOCAL-00001" summary="gamelist fixed">
       <created>1582943184338</created>
@@ -212,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585073695460</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="payment">
+      <created>1586426106080</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1586426106081</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +294,7 @@
     <MESSAGE value="Faq done" />
     <MESSAGE value="fetch from API" />
     <MESSAGE value="Loading and refresh done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Loading and refresh done" />
+    <MESSAGE value="payment" />
+    <option name="LAST_COMMIT_MESSAGE" value="payment" />
   </component>
 </project>

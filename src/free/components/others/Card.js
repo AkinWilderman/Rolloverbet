@@ -8,7 +8,7 @@ const Card = props => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1D252E',
+    backgroundColor: 'grey',
     borderWidth: 1,
     borderRadius: 2,
     borderColor: '#1D252E',
