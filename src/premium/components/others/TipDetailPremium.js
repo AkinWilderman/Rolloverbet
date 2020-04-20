@@ -14,7 +14,10 @@ const TipDetail = props => {
       <Card>
         <CardSection>
           <View style={styles.dateCard}>
-            <Text style={{color: '#D69137', textAlign: 'center'}}> {props.game.date}</Text>
+            <Text style={{color: '#D69137', textAlign: 'center'}}>
+              {' '}
+              {props.game.date}
+            </Text>
             <Text
               style={{
                 color: '#D69137',
@@ -70,10 +73,10 @@ const TipDetail = props => {
 
 const styles = StyleSheet.create({
   dateCard: {
-    backgroundColor: 'white',
+    backgroundColor: '#F2F2F2',
     borderWidth: 1,
     borderRadius: 2,
-    borderColor: '#1D252E',
+    borderColor: 'grey',
     borderBottomWidth: 0,
     shadowColor: '#000',
     shadowOffset: {width: 0, height: 2},
@@ -89,10 +92,10 @@ const styles = StyleSheet.create({
     width: '23%',
   },
   gameCard: {
-    backgroundColor: 'white',
+    backgroundColor: '#F2F2F2',
     borderWidth: 1,
     borderRadius: 2,
-    borderColor: '#1D252E',
+    borderColor: 'grey',
     borderBottomWidth: 0,
     shadowColor: '#000',
     shadowOffset: {width: 0, height: 2},

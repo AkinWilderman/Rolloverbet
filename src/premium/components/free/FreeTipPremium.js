@@ -57,11 +57,6 @@ class Tip extends Component {
                 onRefresh={this.onRefresh.bind(this)}
               />
             }>
-            <View style={styles.warningView}>
-              <Text style={styles.warningText}>
-                Bet Responsibly. Become a premium member and make lots of money!
-              </Text>
-            </View>
             <View>{this.renderTips()}</View>
           </ScrollView>
         </View>

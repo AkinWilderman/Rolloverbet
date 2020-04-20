@@ -18,30 +18,7 @@ function Separator() {
 // ca-app-pub-3763838117475589/9514510636 -  Real Ad ID
 // ca-app-pub-3940256099942544/1033173712 - Test ID
 class Index extends Component {
-  /*state = {subscriptions: []};
-
-  getSubscriptions = () => {
-    const seckey = 'Bearer '.concat(
-      'sk_test_a78ac708871f7b28952f80f783ed2f38c7a2fbfc',
-    );
-    axios
-      .get('https://api.paystack.co/subscription', {
-        headers: {
-          Authorization: seckey,
-        },
-      })
-      .then(response => this.setState({subscriptions: response.data.data}));
-  };
-
-  /!*componentDidMount() {
-    this.getSubscriptions();
-  }*!/
-
-  UNSAFE_componentWillMount() {
-    this.getSubscriptions();
-  }*/
-
-  render() {
+  showInterstitialAds = () => {
     AdMobInterstitial.setAdUnitID(
       'ca-app-pub-3940256099942544/1033173712',
     ).then(r =>
@@ -49,6 +26,13 @@ class Index extends Component {
         AdMobInterstitial.showAdAsync(),
       ),
     );
+  };
+
+  timedAds = () => {
+    setTimeout(this.showInterstitialAds, 60000);
+  };
+
+  render() {
     return (
       <View>
         <TouchableOpacity
@@ -74,7 +58,7 @@ class Index extends Component {
         </TouchableOpacity>
         <Divider style={{backgroundColor: '#D6D8DC', height: 1}} />
         <TouchableOpacity
-          onPress={() => this.props.navigation.navigate('TwoOdds')}>
+          onPress={() => this.props.navigation.navigate('Subscribe')}>
           <View style={styles.belowItems}>
             <Image
               source={require('../../../media/money-bag.png')}
@@ -85,7 +69,7 @@ class Index extends Component {
         </TouchableOpacity>
         <Divider style={{backgroundColor: '#D6D8DC', height: 1}} />
         <TouchableOpacity
-          onPress={() => this.props.navigation.navigate('Accumulator')}>
+          onPress={() => this.props.navigation.navigate('Subscribe')}>
           <View style={styles.belowItems}>
             <Image
               source={require('../../../media/money.png')}
@@ -96,18 +80,18 @@ class Index extends Component {
         </TouchableOpacity>
         <Divider style={{backgroundColor: '#D6D8DC', height: 1}} />
         <TouchableOpacity
-          onPress={() => this.props.navigation.navigate('FiftyOdds')}>
+          onPress={() => this.props.navigation.navigate('Subscribe')}>
           <View style={styles.belowItems}>
             <Image
               source={require('../../../media/money-bag-colored.png')}
               style={styles.image}
             />
-            <Text style={styles.text}>70 ODDS WEEKLY (premium)</Text>
+            <Text style={styles.text}>30 ODDS WEEKLY (premium)</Text>
           </View>
         </TouchableOpacity>
         <Divider style={{backgroundColor: '#D6D8DC', height: 1}} />
         <TouchableOpacity
-          onPress={() => this.props.navigation.navigate('FiftyOdds')}>
+          onPress={() => this.props.navigation.navigate('Subscribe')}>
           <View style={styles.belowItems}>
             <Image
               source={require('../../../media/coin.png')}
@@ -118,7 +102,7 @@ class Index extends Component {
         </TouchableOpacity>
         <Divider style={{backgroundColor: '#D6D8DC', height: 1}} />
         <TouchableOpacity
-          onPress={() => this.props.navigation.navigate('FiftyOdds')}>
+          onPress={() => this.props.navigation.navigate('Subscribe')}>
           <View style={styles.belowItems}>
             <Image
               source={require('../../../media/accumulator.png')}
@@ -140,7 +124,7 @@ class Index extends Component {
         </TouchableOpacity>
         <Divider style={{backgroundColor: '#D6D8DC', height: 1}} />
         <TouchableOpacity
-          onPress={() => this.props.navigation.navigate('Payment')}>
+          onPress={() => this.props.navigation.navigate('Support')}>
           <View style={styles.belowItems}>
             <Image
               source={require('../../../media/customer-service.png')}
@@ -172,6 +156,10 @@ class Index extends Component {
         </View>
       </View>
     );
+
+    {
+      this.timedAds();
+    }
   }
 }
 

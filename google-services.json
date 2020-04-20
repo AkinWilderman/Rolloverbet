@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "982741536870",
+    "firebase_url": "https://betting-tips-d2bc1.firebaseio.com",
+    "project_id": "betting-tips-d2bc1",
+    "storage_bucket": "betting-tips-d2bc1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:982741536870:android:f04bc50f6ad32a98aadda7",
+        "android_client_info": {
+          "package_name": "com.akinkunlegroup.rolloverbet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "982741536870-6css87splugt5trs13g722eo1dqqhnmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3l3SXAa1fYi-HeGfiRNDlwoqroTzyDw4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "982741536870-6css87splugt5trs13g722eo1dqqhnmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

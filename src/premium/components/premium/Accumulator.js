@@ -22,17 +22,7 @@ class Accumulator extends Component {
 
   // render method for the class
   render() {
-    return (
-      <ScrollView>
-        <View style={styles.warningView}>
-          <Text style={styles.warningText}>
-            Bet Responsibly, don't bet with your last money. Sport betting is a
-            business, not a get rich quick scheme. Invest with us!
-          </Text>
-        </View>
-        {/*<View>{this.renderTips()}</View>*/}
-      </ScrollView>
-    );
+    return <ScrollView>{/*<View>{this.renderTips()}</View>*/}</ScrollView>;
   }
 }
 

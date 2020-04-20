@@ -3,6 +3,8 @@
     "name": "Rollover predictions",
     "slug": "Rolloverbet",
     "android": {
+      "package": "com.akinkunlegroup.rolloverbet",
+      "googleServicesFile": "./google-services.json",
       "config": {
         "googleMobileAdsAppId": "ca-app-pub-3763838117475589~1933541692"
       }

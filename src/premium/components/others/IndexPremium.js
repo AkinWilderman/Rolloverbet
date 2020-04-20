@@ -6,39 +6,26 @@ import {
   Image,
   TouchableOpacity,
   Platform,
+  AsyncStorage,
 } from 'react-native';
 import {Divider} from 'react-native-elements';
+import RNRestart from 'react-native-restart';
 import axios from 'axios';
 
-function Separator() {
-  return <View style={styles.separator} />;
-}
-
 class Index extends Component {
-  state = {subscriptions: []};
-
-  getSubscriptions = () => {
-    const seckey = 'Bearer '.concat(
-      'sk_test_a78ac708871f7b28952f80f783ed2f38c7a2fbfc',
-    );
-    axios
-      .get('https://api.paystack.co/subscription', {
-        headers: {
-          Authorization: seckey,
-        },
-      })
-      .then(response => this.setState({subscriptions: response.data.data}));
+  deactivate = async () => {
+    try {
+      await AsyncStorage.multiRemove([
+        'email',
+        'secret',
+        'first name',
+        'last name',
+      ]);
+      alert('Subscription has been canceled, restart App');
+    } catch (e) {
+      console.log();
+    }
   };
-
-  /*componentDidMount() {
-    this.getSubscriptions();
-  }*/
-
-  UNSAFE_componentWillMount() {
-    this.getSubscriptions();
-    const subs = this.state.subscriptions;
-    subs.map(email => console.log(email));
-  }
 
   render() {
     return (
@@ -83,7 +70,7 @@ class Index extends Component {
               source={require('../../../media/money-bag-colored.png')}
               style={styles.image}
             />
-            <Text style={styles.text}>35 ODDS WEEKLY</Text>
+            <Text style={styles.text}>30 ODDS WEEKLY</Text>
           </View>
         </TouchableOpacity>
         <Divider style={{backgroundColor: '#D6D8DC', height: 1}} />
@@ -94,7 +81,7 @@ class Index extends Component {
               source={require('../../../media/coin.png')}
               style={styles.image}
             />
-            <Text style={styles.text}>LIVE MATCHES (free)</Text>
+            <Text style={styles.text}>LIVE MATCHES</Text>
           </View>
         </TouchableOpacity>
         <Divider style={{backgroundColor: '#D6D8DC', height: 1}} />
@@ -105,18 +92,7 @@ class Index extends Component {
               source={require('../../../media/accumulator.png')}
               style={styles.image}
             />
-            <Text style={styles.text}> HIGH STAKERS (premium)</Text>
-          </View>
-        </TouchableOpacity>
-        <Divider style={{backgroundColor: '#D6D8DC', height: 1}} />
-        <TouchableOpacity
-          onPress={() => this.props.navigation.navigate('Subscribe')}>
-          <View style={styles.belowItems}>
-            <Image
-              source={require('../../../media/subscribe.png')}
-              style={styles.image}
-            />
-            <Text style={styles.text}>SUBSCRIBE</Text>
+            <Text style={styles.text}> HIGH STAKERS</Text>
           </View>
         </TouchableOpacity>
         <Divider style={{backgroundColor: '#D6D8DC', height: 1}} />
@@ -138,6 +114,16 @@ class Index extends Component {
               style={styles.image}
             />
             <Text style={styles.text}>F.A.Q</Text>
+          </View>
+        </TouchableOpacity>
+        <Divider style={{backgroundColor: '#D6D8DC', height: 1}} />
+        <TouchableOpacity onPress={this.deactivate}>
+          <View style={styles.belowItems}>
+            <Image
+              source={require('../../../media/activate.png')}
+              style={styles.image}
+            />
+            <Text style={styles.text}>DEACTIVATE SUBSCRIPTION</Text>
           </View>
         </TouchableOpacity>
         <Divider style={{backgroundColor: '#D6D8DC', height: 1}} />

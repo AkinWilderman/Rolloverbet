@@ -1,8 +1,14 @@
 import React, {Component} from 'react';
-import {View, Text, Alert, AsyncStorage, StyleSheet} from 'react-native';
+import {
+  View,
+  Text,
+  Alert,
+  AsyncStorage,
+  StyleSheet,
+  NativeModules,
+} from 'react-native';
 import {Button} from 'react-native-elements';
 import {TextField} from 'react-native-material-textfield';
-import Index from '../others/Index';
 
 export default class Activate extends Component {
   state = {
@@ -37,20 +43,20 @@ export default class Activate extends Component {
               alert('error activating user');
             }
           } else {
-            alert('Enter you secret code, first name and last name');
+            alert('At least one field is empty, all fields are required');
           }
         } else {
-          alert('Enter your last name');
+          alert('At least one field is empty, all fields are required');
         }
       } else {
-        alert('Enter your first name and last name');
+        alert('At least one field is empty, all fields are required');
       }
     } else {
-      alert('Enter you secret code, first name and last name');
+      alert('At least one field is empty, all fields are required');
     }
   };
 
-  getUser = async () => {
+  /*getUser = async () => {
     try {
       let user = await AsyncStorage.multiGet([
         'email',
@@ -64,12 +70,24 @@ export default class Activate extends Component {
     } catch (e) {
       alert('error fetching user');
     }
-  };
+  };*/
 
   render() {
     return (
       <View style={styles.container}>
         <View style={styles.form}>
+          <TextField
+            label="Email"
+            style={styles.textfield}
+            placeholder="foo@example.com"
+            placeholderTextColor="black"
+            textColor="#000000"
+            returnKeyType="next"
+            autoCapitalize="none"
+            autoCorrect={false}
+            value={this.state.email}
+            onChangeText={email => this.setState({email})}
+          />
           <TextField
             label="First Name"
             style={styles.textfield}
@@ -95,33 +113,20 @@ export default class Activate extends Component {
             onChangeText={lastname => this.setState({lastname})}
           />
           <TextField
-            label="Email"
-            style={styles.textfield}
-            placeholder="foo@example.com"
-            placeholderTextColor="black"
-            textColor="#000000"
-            returnKeyType="next"
-            autoCapitalize="none"
-            autoCorrect={false}
-            value={this.state.email}
-            onChangeText={email => this.setState({email})}
-          />
-          <TextField
             label="Secret Code"
             style={styles.textfield}
-            placeholder="6 digit code"
+            placeholder="phone number with country code"
             placeholderTextColor="black"
             baseColor="rgba(0,0,0,1)"
             textColor="#000000"
-            returnKeyType="go"
-            keyboardType="numeric"
+            keyboardType="phone-pad"
             secureTextEntry
             value={this.state.secretCode}
             onChangeText={secretCode => this.setState({secretCode})}
           />
           <View>
             <Button
-              title="Activate"
+              title="Save Details"
               buttonStyle={styles.button}
               onPress={this.saveUser}
             />
@@ -144,5 +149,6 @@ const styles = StyleSheet.create({
   button: {
     width: '40%',
     alignSelf: 'center',
+    marginTop: 10,
   },
 });
