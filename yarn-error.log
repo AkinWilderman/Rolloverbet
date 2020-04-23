@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add react-native-material-textfield
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add react-native-push-nootification
 
 PATH: 
   C:\Users\Akinkunle\ReactNativeProjects\Rolloverbet\node_modules\.bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Yarn\bin\;C:\Users\Akinkunle\Anaconda3;C:\Users\Akinkunle\Anaconda3\Library\mingw-w64\bin;C:\Users\Akinkunle\Anaconda3\Library\bin;C:\Users\Akinkunle\Anaconda3\Scripts;C:\Users\Akinkunle\Anaconda2;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Users\Akinkunle\Anaconda3;C:\Users\Akinkunle\Anaconda3\Library\mingw-w64\bin;C:\Users\Akinkunle\Anaconda3\Library\usr\bin;C:\Users\Akinkunle\Anaconda3\Library\bin;C:\Users\Akinkunle\Anaconda3\Scripts;C:\Users\Akinkunle\AppData\Local\Microsoft\WindowsApps;C:\Users\Akinkunle\AppData\Local\Yarn\bin;C:\Users\Akinkunle\AppData\Local\GitHubDesktop\bin;C:\Program Files\heroku\bin;C:\Users\Akinkunle\AppData\Local\Programs\Microsoft VS Code\bin;c:\Users\Akinkunle\AppData\Local\Android\Sdk\platform-tools;C:\Users\Akinkunle\AppData\Roaming\npm;C:\Users\Akinkunle\ngrok;
@@ -14,8 +14,17 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
-      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:60:26)
+  Error: https://registry.yarnpkg.com/react-native-push-nootification: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:65167:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:129541:22)
+      at Request.emit (events.js:210:5)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:130513:10)
+      at Request.emit (events.js:210:5)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:130435:12)
+      at Object.onceWrapper (events.js:299:28)
+      at IncomingMessage.emit (events.js:215:7)
+      at endReadableNT (_stream_readable.js:1184:12)
+      at processTicksAndRejections (internal/process/task_queues.js:80:21)
 
 npm manifest: 
   {
@@ -46,6 +55,7 @@ npm manifest:
       "react-native-rave": "^2.2.5",
       "react-native-ravepay": "^2.3.2",
       "react-native-reanimated": "~1.4.0",
+      "react-native-restart": "^0.0.14",
       "react-native-safe-area-context": "0.6.0",
       "react-native-screens": "2.0.0-alpha.12",
       "react-native-web": "~0.11.7",
@@ -7799,6 +7809,11 @@ Lockfile:
     version "1.4.0"
     resolved "https://registry.yarnpkg.com/react-native-reanimated/-/react-native-reanimated-1.4.0.tgz#7f1acbf9be08492d834f512700570978052be2f9"
     integrity sha512-tO7nSNNP+iRLVbkcSS5GXyDBb7tSI02+XuRL3/S39EAr35rnvUy2JfeLUQG+fWSObJjnMVhasUDEUwlENk8IXw==
+  
+  react-native-restart@^0.0.14:
+    version "0.0.14"
+    resolved "https://registry.yarnpkg.com/react-native-restart/-/react-native-restart-0.0.14.tgz#e66bf76e60421b37bfee20310beb6ab64ef57b9c"
+    integrity sha512-2jQzmGlT243yRrvuj1FtOFCnMxiNoXhrP6a5ZYkouGAmtx/GgR9kI3E4iGzTJwJY7l1qbnbLHlbjn/1JAALd7Q==
   
   react-native-safe-area-context@0.6.0:
     version "0.6.0"

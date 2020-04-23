@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ab5d844-a44d-4bfa-ba7a-422f3075c078" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/google-services.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/free/components/others/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/others/Index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/free/components/free/LiveMatches.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/free/LiveMatches.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/free/components/others/Navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/others/Navigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/free/components/premium/Activate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/premium/Activate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/free/components/payment/Subscribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/payment/Subscribe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/free/components/payment/Yearly.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/payment/Yearly.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/premium/components/free/FreeTipPremium.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/premium/components/free/FreeTipPremium.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/premium/components/others/IndexPremium.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/premium/components/others/IndexPremium.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/premium/components/others/TipDetailPremium.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/premium/components/others/TipDetailPremium.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/premium/components/payment/Daily.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/premium/components/payment/Monthly.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/free/components/payment/Yearly.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/premium/components/payment/Subscribe.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/premium/components/payment/Weekly.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/premium/components/premium/Accumulator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/premium/components/premium/Accumulator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn-error.log" beforeDir="false" afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -200,7 +193,12 @@
       <workItem from="1587167597417" duration="9342000" />
       <workItem from="1587197036437" duration="8361000" />
       <workItem from="1587280600876" duration="17966000" />
-      <workItem from="1587329801341" duration="37889000" />
+      <workItem from="1587329801341" duration="40121000" />
+      <workItem from="1587426287941" duration="3718000" />
+      <workItem from="1587457790866" duration="4170000" />
+      <workItem from="1587488813998" duration="7166000" />
+      <workItem from="1587508960996" duration="1127000" />
+      <workItem from="1587558021705" duration="9709000" />
     </task>
     <task id="LOCAL-00001" summary="gamelist fixed">
       <created>1582943184338</created>
@@ -251,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587107894607</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="subscription fixed">
+      <created>1587397042228</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587397042228</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +283,7 @@
     <MESSAGE value="fetch from API" />
     <MESSAGE value="Loading and refresh done" />
     <MESSAGE value="payment" />
-    <option name="LAST_COMMIT_MESSAGE" value="payment" />
+    <MESSAGE value="subscription fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="subscription fixed" />
   </component>
 </project>

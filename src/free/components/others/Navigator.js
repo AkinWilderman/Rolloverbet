@@ -8,6 +8,7 @@ import Daily from '../payment/Daily';
 import Support from '../support/Support';
 import Weekly from '../payment/Weekly';
 import Monthly from '../payment/Monthly';
+import Yearly from '../payment/Yearly';
 import Subscribe from '../payment/Subscribe';
 import Activate from '../premium/Activate';
 
@@ -19,6 +20,13 @@ const APPNavigator = createStackNavigator({
     },
   },
   freeTips: {
+    screen: FreeTip,
+    navigationOptions: {
+      headerTitle: 'Free Tips',
+      headerStatusBarHeight: 0,
+    },
+  },
+  LiveMatches: {
     screen: FreeTip,
     navigationOptions: {
       headerTitle: 'Free Tips',
@@ -48,6 +56,13 @@ const APPNavigator = createStackNavigator({
   },
   Monthly: {
     screen: Monthly,
+    navigationOptions: {
+      headerTitle: 'Monthly Subscription',
+      headerStatusBarHeight: 0,
+    },
+  },
+  Yearly: {
+    screen: Yearly,
     navigationOptions: {
       headerTitle: 'Monthly Subscription',
       headerStatusBarHeight: 0,

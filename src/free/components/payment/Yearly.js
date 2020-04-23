@@ -1,15 +1,15 @@
 import React, {Component} from 'react';
 import {WebView} from 'react-native-webview';
 
-class Monthly extends Component {
+class Yearly extends Component {
   render() {
     return (
       <WebView
-        source={{uri: 'https://paystack.com/pay/rollovertips_monthly_test'}}
+        source={{uri: 'https://paystack.com/pay/eri45hfqpv'}}
         javaScriptEnabled={true}
       />
     );
   }
 }
 
-export default Monthly;
+export default Yearly;

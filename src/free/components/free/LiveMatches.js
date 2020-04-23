@@ -4,7 +4,7 @@ import TipDetail from '../others/TipDetail';
 import axios from 'axios';
 
 class LiveMatches extends Component {
-  /*state = {tips: []};
+  state = {tips: []};
 
   UNSAFE_componentWillMount() {
     axios
@@ -18,7 +18,7 @@ class LiveMatches extends Component {
     return reversed.map(tip => (
       <TipDetail key={tip.id} game={tip} />
     ));
-  }*/
+  }
 
   // render method for the class
   render() {
